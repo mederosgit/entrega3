@@ -1,0 +1,35 @@
+@use '_commons' as c;
+
+// header.................................... 
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-index{
+    text-align: center;
+    width: 100%;
+    padding: 2px;
+    border-radius: black;
+    font-size: c.$font-size-titulo;
+    background-color: c.$background-titulo;
+    box-shadow: 10px 10px 35px rgb(0, 0, 0);
+    text-shadow: 5px 5px 15px rgb(0, 0, 0);
+    border-radius: 20px;
+    border: solid 7px rgb(0, 0, 0)
+}
+
+@media only screen and (min-width: 1200px) {
+    .titulo-index{
+        padding: 5px;
+        margin-top: 60px;
+        text-align: center;
+        width: 100%;
+        border-radius: 20px;
+        font-size: 90px;
+        background-image: url(/imgWeb/body-3.jpg);
+        color: rgb(0, 0, 0);
+    }
+}

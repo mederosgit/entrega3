@@ -1,0 +1,39 @@
+
+// variables
+
+$background: linear-gradient(45deg,rgb(0, 0, 0),rgb(165, 165, 165));
+$background-titulo: #7b400079;
+$color-textos: rgb(255, 255, 255);
+$font-size-titulo: 45px;
+$font-size-redes: 25px;
+
+// grid...........................................
+
+
+header {
+    width: 100%;
+    grid-area: header;   
+}
+nav {
+    width: 100%;
+    grid-area: nav;
+}
+main {
+    width: 100%;
+    grid-area: main;
+}
+footer {
+    width: 100%;
+    grid-area: footer;
+}
+
+
+.contenedor-index {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 3fr 1fr;
+    grid-template-areas: 
+      "header"
+      "main"
+      "footer";
+}
