@@ -14,7 +14,11 @@ body{
     background-position: center
 }
 
-// index......................................... 
+.nav-link:hover{
+    background-color: rgb(255, 0, 0);
+}
+
+// index..........................................
 
 .contenedor-foto-index{
     display: flex;
@@ -27,8 +31,13 @@ body{
         height: 300px;
         margin-bottom: 30px;
         border-radius: 50px;
-        border: solid 7px white;
+        border: solid 7px rgb(155, 155, 155);
         box-shadow: 15px 15px 20px rgb(0, 0, 0);
+
+        &:hover {
+            filter: saturate(300%);
+            border: 10px solid red;
+        }
     }
 
     .foto-index-2{
@@ -192,13 +201,12 @@ body{
             margin-bottom: 100px;
             box-shadow: 15px 15px 20px rgb(0, 0, 0);
         }
-    
+
         .foto-index-2{
-            width: 500px;
-            height: 475px;
-            margin-bottom: 100px;
-            box-shadow: 15px 15px 20px rgb(0, 0, 0);
+            @extend .foto-index-1;
         }
+    
+        
     }
 
     .footer-index{

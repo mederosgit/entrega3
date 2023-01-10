@@ -1,13 +1,14 @@
 @use '_commons' as c;
 
-// footer........................................
+// footer.........................................
 
 .contenedor-redes{
-    font-family:'Rubik Distressed', cursive;
+    font-family:'Rubik Distressed';
     text-align: center;
     text-shadow: 5px 5px 35px rgb(255, 255, 255);
     font-size: c.$font-size-redes;
     color: c.$color-textos;
+    
 
     .redes{
         margin-top: 23px;

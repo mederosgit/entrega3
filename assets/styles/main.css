@@ -38,6 +38,10 @@ body {
   background-position: center;
 }
 
+.nav-link:hover {
+  background-color: rgb(255, 0, 0);
+}
+
 .contenedor-foto-index {
   display: flex;
   justify-content: center;
@@ -49,8 +53,12 @@ body {
   height: 300px;
   margin-bottom: 30px;
   border-radius: 50px;
-  border: solid 7px white;
+  border: solid 7px rgb(155, 155, 155);
   box-shadow: 15px 15px 20px rgb(0, 0, 0);
+}
+.contenedor-foto-index .foto-index-1:hover, .contenedor-foto-index .foto-index-2:hover {
+  filter: saturate(300%);
+  border: 10px solid red;
 }
 .footer-index {
   margin-top: 10px;
@@ -185,12 +193,6 @@ body {
     margin-bottom: 100px;
     box-shadow: 15px 15px 20px rgb(0, 0, 0);
   }
-  .contenedor-foto-index .foto-index-2 {
-    width: 500px;
-    height: 475px;
-    margin-bottom: 100px;
-    box-shadow: 15px 15px 20px rgb(0, 0, 0);
-  }
   .footer-index {
     margin-top: 40px;
   }
@@ -285,7 +287,7 @@ header {
   }
 }
 .contenedor-redes {
-  font-family: "Rubik Distressed", cursive;
+  font-family: "Rubik Distressed";
   text-align: center;
   text-shadow: 5px 5px 35px rgb(255, 255, 255);
   font-size: 25px;
