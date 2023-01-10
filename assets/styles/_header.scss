@@ -19,7 +19,7 @@ header{
     text-shadow: 5px 5px 15px rgb(0, 0, 0);
     border-radius: 20px;
     border: solid 7px rgb(0, 0, 0);
-
+    
     transition: transform 1s, background-color 1s;
 
     &:hover {
@@ -38,6 +38,5 @@ header{
         border-radius: 20px;
         font-size: 90px;
         background-image: url(/imgWeb/body-3.jpg);
-        color: rgb(0, 0, 0);
     }
 }

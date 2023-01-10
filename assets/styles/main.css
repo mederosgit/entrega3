@@ -32,7 +32,7 @@ footer {
 
 body {
   width: 95%;
-  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(165, 165, 165));
+  background: linear-gradient(30deg, rgb(0, 0, 0) 10%, #55423d 30%, #271c19 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -81,6 +81,10 @@ body {
   font-size: 30px;
   color: rgb(255, 255, 255);
   margin-bottom: 50px;
+}
+
+.label:focus {
+  border: 20px solid rgb(0, 0, 0);
 }
 
 .footer-socios {
@@ -267,7 +271,7 @@ header {
   padding: 2px;
   border-radius: black;
   font-size: 45px;
-  background-color: rgba(123, 64, 0, 0.4745098039);
+  background-color: #7b4000;
   box-shadow: 10px 10px 35px rgb(0, 0, 0);
   text-shadow: 5px 5px 15px rgb(0, 0, 0);
   border-radius: 20px;
@@ -288,7 +292,6 @@ header {
     border-radius: 20px;
     font-size: 90px;
     background-image: url(/imgWeb/body-3.jpg);
-    color: rgb(0, 0, 0);
   }
 }
 .contenedor-redes {
