@@ -272,6 +272,11 @@ header {
   text-shadow: 5px 5px 15px rgb(0, 0, 0);
   border-radius: 20px;
   border: solid 7px rgb(0, 0, 0);
+  transition: transform 1s, background-color 1s;
+}
+.titulo-index:hover {
+  transform: scale(1.1);
+  background-color: rgb(250, 0, 0);
 }
 
 @media only screen and (min-width: 1200px) {
@@ -297,12 +302,4 @@ header {
   margin-top: 23px;
   width: 40px;
   height: 40px;
-}
-
-@media only screen and (min-width: 1200px) {
-  .redes {
-    margin-top: 23px;
-    width: 50px;
-    height: 50px;
-  }
 }/*# sourceMappingURL=main.css.map */

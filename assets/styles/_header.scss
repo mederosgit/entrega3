@@ -18,7 +18,15 @@ header{
     box-shadow: 10px 10px 35px rgb(0, 0, 0);
     text-shadow: 5px 5px 15px rgb(0, 0, 0);
     border-radius: 20px;
-    border: solid 7px rgb(0, 0, 0)
+    border: solid 7px rgb(0, 0, 0);
+
+    transition: transform 1s, background-color 1s;
+
+    &:hover {
+
+        transform: scale(1.1);
+        background-color: rgb(250, 0, 0);
+    }
 }
 
 @media only screen and (min-width: 1200px) {
