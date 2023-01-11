@@ -60,8 +60,28 @@ body {
   filter: saturate(300%);
   border: 10px solid red;
 }
+.contenedor-foto-index h1 {
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.contenedor-foto-index h2 {
+  margin-bottom: 60px;
+  text-align: center;
+  color: rgb(176, 177, 178);
+}
+.contenedor-foto-index h3 {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+}
+.contenedor-foto-index h4 {
+  margin-bottom: 200px;
+  text-align: center;
+  color: black;
+}
+
 .footer-index {
-  margin-top: 10px;
+  margin-top: 60px;
 }
 
 .main-socios {
@@ -198,16 +218,10 @@ body {
     box-shadow: 15px 15px 20px rgb(0, 0, 0);
   }
   .footer-index {
-    margin-top: 40px;
+    margin-top: 120px;
   }
   /* media de catalogo */
-  .img-catalogo {
-    display: none;
-  }
-  .titulo-video-catalogo {
-    display: none;
-  }
-  .video-catalogo {
+  .img-catalogo, .titulo-video-catalogo, .video-catalogo {
     display: none;
   }
   .titulo-catalogo {

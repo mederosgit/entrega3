@@ -27,6 +27,7 @@ body{
     flex-wrap: wrap;
     gap: 15px;
 
+
     .foto-index-1{
         width: 300px;
         height: 300px;
@@ -39,16 +40,44 @@ body{
             filter: saturate(300%);
             border: 10px solid red;
         }
+
     }
 
     .foto-index-2{
         @extend .foto-index-1;
     }
+
+    h1{
+        text-align: center;
+        color: c.$color-textos;
+    }
+
+    h2{
+        margin-bottom: 60px;
+        text-align: center;
+        color: c.$color-texto-index;
+    }
+
+    h3{
+        text-align: center;
+        color: black;
+        margin-bottom: 20px;
+    }
+
+    h4{
+        margin-bottom: 200px;
+        text-align: center;
+        color: black;
+    }
 }
 
 .footer-index{
-    margin-top: 10px;
+    margin-top: 60px;
 }
+
+
+
+
 
 // socios..........................................
 
@@ -210,25 +239,15 @@ body{
         .foto-index-2{
             @extend .foto-index-1;
         }
-    
-        
     }
 
     .footer-index{
-        margin-top: 40px;
+        margin-top: 120px;
     }
 
     
     /* media de catalogo */
-    .img-catalogo{
-        display: none;
-    }
-
-    .titulo-video-catalogo{
-        display: none;
-    }
-
-    .video-catalogo{
+    .img-catalogo, .titulo-video-catalogo, .video-catalogo{
         display: none;
     }
 
