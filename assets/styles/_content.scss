@@ -27,12 +27,12 @@ body{
     flex-wrap: wrap;
     gap: 15px;
 
-
+    // operadores de + , - , * , / ..........
     .foto-index-1{
-        width: 300px;
-        height: 300px;
-        margin-bottom: 30px;
-        border-radius: 50px;
+        width: (100px * 3);
+        height: (600px / 2);
+        margin-bottom: (40px - 10px);
+        border-radius: (25px + 25px);
         border: solid 7px rgb(155, 155, 155);
         box-shadow: 15px 15px 20px rgb(0, 0, 0);
 
@@ -47,28 +47,31 @@ body{
         @extend .foto-index-1;
     }
 
+   
     h1{
         text-align: center;
-        color: c.$color-textos;
+        color: c.$color-titulos;
     }
 
     h2{
         margin-bottom: 60px;
         text-align: center;
-        color: c.$color-texto-index;
+        color: c.$color-h2;
     }
 
     h3{
         text-align: center;
-        color: black;
+        color: c.$color-h3;
         margin-bottom: 20px;
     }
 
     h4{
         margin-bottom: 200px;
         text-align: center;
-        color: black;
+        color: c.$color-h4;
     }
+
+    
 }
 
 .footer-index{
@@ -92,12 +95,12 @@ body{
     .titulo-socios{
         margin-top: 50px;
         font-size: 30px;
-        color: c.$color-textos;
+        color: c.$color_titulos;
     }
     
     .subtitulo-socios{
         font-size: 30px;
-        color: c.$color-textos;
+        color: c.$color-titulos;
         margin-bottom: 50px;
     }
 }
@@ -118,7 +121,7 @@ body{
 // catalogo.....................................
 
 .titulo-catalogo{
-    color: c.$color-textos;
+    color: c.$color-titulos;
     text-align: center;
     text-shadow: 15px 5px 15px rgb(0, 0, 0);
 }
@@ -137,7 +140,7 @@ body{
 
     .titulo-video-catalogo{
         margin-top: 70px;
-        color: c.$color-textos;
+        color: c.$color-titulos;
         text-align: center;
         text-shadow: 15px 5px 15px rgb(0, 0, 0);
     }
@@ -164,7 +167,7 @@ body{
     margin-left: 10px;
 
     .subtitulo-productos{
-        color: c.$color-textos;
+        color: c.$color-titulos;
         margin-bottom: 50px;
         text-align: center;
         text-shadow: 15px 15px 20px rgb(0, 0, 0);
@@ -183,7 +186,7 @@ body{
 // video.............................................
 
 .titulo-video-1{
-    color: c.$color-textos;
+    color: c.$color-titulos;
     text-align: center;
     text-shadow: 5px 5px 20px rgb(0, 0, 0);
 }
@@ -202,7 +205,7 @@ body{
 
     .titulo-video-2{
         margin-top: 50px;
-        color: c.$color-textos;
+        color: c.$color-titulos;
         text-align: center;
         text-shadow: 15px 15px 20px rgb(0, 0, 0);
     }
@@ -223,21 +226,27 @@ body{
 
     
     /* media de index */
+    
     .contenedor-foto-index{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
-    
-        .foto-index-1{
-            width: 500px;
-            height: 475px;
+
+        // mixin.............................................
+        @mixin fotos-principales($h, $w) {
+            height: $h;
+            width: $w;
             margin-bottom: 100px;
             box-shadow: 15px 15px 20px rgb(0, 0, 0);
         }
+        
+        .foto-index-1{
+            @include fotos-principales(475px, 500px);
+        }
 
         .foto-index-2{
-            @extend .foto-index-1;
+            @include fotos-principales(475px, 500px);
         }
     }
 
@@ -262,20 +271,15 @@ body{
     
     
     /* media de socios */
+    
+
     .subtitulo-socios{
         margin-bottom: 50px;
+        font-size: 40px;
     }
 
     .form{
         margin-left: 100px;
-    }
-
-    .titulo-socios{
-        font-size: 50px;
-    }
-
-    .subtitulo-socios{
-        font-size: 40px;
     }
 
     .footer-socios{
