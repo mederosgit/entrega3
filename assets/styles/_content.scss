@@ -58,10 +58,11 @@ body{
     h1{
         text-align: center;
         color: c.$color-titulos;
+        margin-bottom: 40px;
     }
 
     h2{
-        margin-bottom: 60px;
+        margin-bottom: 180px;
         text-align: center;
         color: c.$color-h2;
     }
@@ -80,7 +81,7 @@ body{
 }
 
 .footer-index{
-    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
 // socios..........................................
@@ -120,7 +121,7 @@ body{
 }
 
 .footer-socios{
-    margin-top: 173px;
+    margin-top: 62px;
 }
 
 // catalogo.....................................
@@ -173,7 +174,7 @@ body{
 }
 
 .footer-catalogo{
-    margin-top: 480px;
+    margin-top: 368px;
 }
 
 // productos..........................................
@@ -196,7 +197,7 @@ body{
 }
 
 .footer-productos{
-    margin-top: 370px;
+    margin-top: 258px;
 }
 
 // video.............................................
@@ -241,7 +242,7 @@ body{
 }
 
 .footer-video{
-    padding-top: 400px;
+    margin-top: 287px;
 }
 
 // media Desktop.................................................
@@ -275,7 +276,7 @@ body{
     }
 
     .footer-index{
-        margin-top: 120px;
+        margin-top: 70px;
     }
 
     
@@ -289,7 +290,7 @@ body{
     }
 
     .footer-catalogo{
-        margin-top: 345px;
+        margin-top: 282px;
     }
 
     /* media de socios */
@@ -303,7 +304,7 @@ body{
     }
 
     .footer-socios{
-        margin-bottom: 35px;
+        margin-bottom: 25px;
     }
 
     /* media de productos */
@@ -318,7 +319,7 @@ body{
     }
     
     .footer-productos{
-        margin-top:400px;
+        margin-top:336px;
     }
 
     /* media de videos */
@@ -344,7 +345,7 @@ body{
     }
 
     .footer-video{
-        margin-top: 80px;
+        margin-top: 417px;
     }
 
     

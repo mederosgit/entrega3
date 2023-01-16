@@ -81,9 +81,10 @@ body {
 .contenedor-foto-index h1 {
   text-align: center;
   color: #FFFFFF;
+  margin-bottom: 40px;
 }
 .contenedor-foto-index h2 {
-  margin-bottom: 60px;
+  margin-bottom: 180px;
   text-align: center;
   color: #C0C0C0;
 }
@@ -99,7 +100,7 @@ body {
 }
 
 .footer-index {
-  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 .main-socios {
@@ -134,7 +135,7 @@ body {
 }
 
 .footer-socios {
-  margin-top: 173px;
+  margin-top: 62px;
 }
 
 .titulo-catalogo, .subtitulo-catalogo {
@@ -179,7 +180,7 @@ body {
 }
 
 .footer-catalogo {
-  margin-top: 480px;
+  margin-top: 368px;
 }
 
 #main-productos {
@@ -199,7 +200,7 @@ body {
 }
 
 .footer-productos {
-  margin-top: 370px;
+  margin-top: 258px;
 }
 
 .videos {
@@ -232,7 +233,7 @@ body {
 }
 
 .footer-video {
-  padding-top: 400px;
+  margin-top: 287px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -256,7 +257,7 @@ body {
     box-shadow: 15px 15px 20px rgb(0, 0, 0);
   }
   .footer-index {
-    margin-top: 120px;
+    margin-top: 70px;
   }
   /* media de catalogo */
   .img-catalogo, .titulo-video-catalogo, .video-catalogo {
@@ -266,7 +267,7 @@ body {
     text-shadow: 15px 15px 20px rgb(0, 0, 0);
   }
   .footer-catalogo {
-    margin-top: 345px;
+    margin-top: 282px;
   }
   /* media de socios */
   .subtitulo-socios {
@@ -277,7 +278,7 @@ body {
     margin-left: 100px;
   }
   .footer-socios {
-    margin-bottom: 35px;
+    margin-bottom: 25px;
   }
   /* media de productos */
   table {
@@ -289,7 +290,7 @@ body {
     color: #C0C0C0;
   }
   .footer-productos {
-    margin-top: 400px;
+    margin-top: 336px;
   }
   /* media de videos */
   .titulo-video {
@@ -311,7 +312,7 @@ body {
     height: 650px;
   }
   .footer-video {
-    margin-top: 80px;
+    margin-top: 417px;
   }
 }
 header {
@@ -348,7 +349,7 @@ header {
   }
 }
 .contenedor-redes {
-  font-family: "Rubik Distressed";
+  font-family: "font-family: " Rubik Distressed ", cursive;";
   text-align: center;
   text-shadow: 5px 5px 35px rgb(255, 255, 255);
   font-size: 25px;
