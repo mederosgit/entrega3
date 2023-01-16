@@ -15,7 +15,7 @@ body{
 }
 
 .nav-link:hover{
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 
@@ -29,12 +29,18 @@ body{
 
     // operadores de + , - , * , / ..........
     .foto-index-1{
-        width: (100px * 3);
-        height: (600px / 2);
-        margin-bottom: (40px - 10px);
-        border-radius: (25px + 25px);
+        width: calc(100px * 3);
+        height: calc(600px / 2);
+        margin-bottom: calc(40px - 10px);
+        border-radius: calc(25px + 25px);
         border: solid 7px rgb(155, 155, 155);
         box-shadow: 15px 15px 20px rgb(0, 0, 0);
+        animation: escalar-imagen 2s ease-in-out infinite alternate;
+        
+        @keyframes escalar-imagen {
+            from {transform: scale(1);}
+            to {transform: scale(1.05);}
+          }
 
         // Pseudoclase
         &:hover {
@@ -71,17 +77,11 @@ body{
         text-align: center;
         color: c.$color-h4;
     }
-
-    
 }
 
 .footer-index{
     margin-top: 60px;
 }
-
-
-
-
 
 // socios..........................................
 
@@ -94,7 +94,7 @@ body{
     text-shadow: 15px 15px 15px rgb(0, 0, 0);
    
     .titulo-socios{
-        margin-top: 50px;
+        margin-top: 10px;
         font-size: 30px;
         color: c.$color_titulos;
     }
@@ -105,6 +105,7 @@ body{
         margin-bottom: 50px;
     }
 }
+
 // Pseudoclase
 .form-control:focus {
     box-shadow: 10px 10px 15px rgb(0, 0, 0);
@@ -113,13 +114,13 @@ body{
     background-color: #8e4c00;
 }
 
-.footer-socios{
-    margin-top: 75px;
-}
-
 .form{
     margin-left: 15px;
     box-shadow: 15px 15px 20px rgb(0, 0, 0);
+}
+
+.footer-socios{
+    margin-top: 173px;
 }
 
 // catalogo.....................................
@@ -128,6 +129,11 @@ body{
     color: c.$color-titulos;
     text-align: center;
     text-shadow: 15px 5px 15px rgb(0, 0, 0);
+}
+
+.subtitulo-catalogo{
+    @extend .titulo-catalogo;
+    margin-top: 60px;
 }
 
 .container-catalogo{
@@ -153,6 +159,12 @@ body{
         margin-bottom: 85px;
         box-shadow: 15px 15px 20px rgb(0, 0, 0);
     }
+
+    .parrafo-video-catalogo{
+        color: c.$color-titulos;
+        text-align: center;
+        text-shadow: 15px 5px 15px rgb(0, 0, 0);
+    }
 }
 
 .img-catalogo{
@@ -161,13 +173,13 @@ body{
 }
 
 .footer-catalogo{
-    margin-top: 90px;
+    margin-top: 480px;
 }
 
 // productos..........................................
 
 #main-productos{
-    padding-bottom: 10px ;
+    padding-bottom: 10px;
     margin-left: 10px;
 
     .subtitulo-productos{
@@ -178,29 +190,37 @@ body{
     }
 } 
 
-#container-productos{
+#container-productos-1{
     margin-bottom: 150px;
     box-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
 
 .footer-productos{
-    margin-top: 60px;
+    margin-top: 370px;
 }
 
 // video.............................................
-
-.titulo-video-1{
-    color: c.$color-titulos;
-    text-align: center;
-    text-shadow: 5px 5px 20px rgb(0, 0, 0);
-}
-
 
 .videos{
     display: flex;
     display: block;
     flex-wrap: wrap;
     margin: 30px;
+
+    .titulo-video-1{
+        color: c.$color-titulos;
+        text-align: center;
+        text-shadow: 5px 5px 20px rgb(0, 0, 0);
+    }
+
+    .subtitulo-video-1{
+        @extend .titulo-video-1;
+        margin-bottom: 30px;
+    }
+
+    .parrafo-video{
+        @extend .titulo-video-1;
+    }
 
     .videos-1{
         margin-bottom: 20px;
@@ -221,10 +241,10 @@ body{
 }
 
 .footer-video{
-    padding-top: 100px;
+    padding-top: 400px;
 }
 
-// media.................................................
+// media Desktop.................................................
 
 @media only screen and (min-width: 1200px) {
 
@@ -269,14 +289,10 @@ body{
     }
 
     .footer-catalogo{
-        margin-top: 235px;
+        margin-top: 345px;
     }
 
-    
-    
     /* media de socios */
-    
-
     .subtitulo-socios{
         margin-bottom: 50px;
         font-size: 40px;
@@ -290,6 +306,20 @@ body{
         margin-bottom: 35px;
     }
 
+    /* media de productos */
+    table{
+        margin-left: 20px;
+    }
+
+    .parrafo-productos{
+        text-align: center;
+        font-size: c.$font-size-redes;
+        color: c.$color-h2;
+    }
+    
+    .footer-productos{
+        margin-top:400px;
+    }
 
     /* media de videos */
     .titulo-video{
@@ -304,24 +334,19 @@ body{
     }
 
     .titulo-video-2{
-        display: none;
+        font-size: 30px;
+        text-shadow: 15px 15px 20px rgb(0, 0, 0);;
     }
     .videos-2{
-        display: none;
+        margin-left: 50px;
+        margin-bottom: 100px;
+        height: 650px;;
     }
 
     .footer-video{
-        margin-top: 8px ;
+        margin-top: 80px;
     }
 
     
     
-    /* media de productos */
-    table{
-        margin-left: 20px;
-    }
-    
-    .footer-productos{
-        margin-top: 130px;
-    }
 }

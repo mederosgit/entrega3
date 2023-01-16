@@ -32,14 +32,14 @@ footer {
 
 body {
   width: 95%;
-  background: linear-gradient(30deg, rgb(255, 255, 255) 10%, #5f5f5f 30%, #000000 100%);
+  background: linear-gradient(30deg, rgb(91, 91, 91) 10%, #5f5f5f 30%, #000000 100%);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 .nav-link:hover {
-  background-color: rgb(255, 0, 0);
+  background-color: rgb(0, 0, 0);
 }
 
 .contenedor-foto-index {
@@ -55,6 +55,24 @@ body {
   border-radius: 50px;
   border: solid 7px rgb(155, 155, 155);
   box-shadow: 15px 15px 20px rgb(0, 0, 0);
+  -webkit-animation: escalar-imagen 2s ease-in-out infinite alternate;
+          animation: escalar-imagen 2s ease-in-out infinite alternate;
+}
+@-webkit-keyframes escalar-imagen {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+@keyframes escalar-imagen {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
 }
 .contenedor-foto-index .foto-index-1:hover, .contenedor-foto-index .foto-index-2:hover {
   filter: saturate(300%);
@@ -93,7 +111,7 @@ body {
   text-shadow: 15px 15px 15px rgb(0, 0, 0);
 }
 .contenedor-titulo-socios .titulo-socios {
-  margin-top: 50px;
+  margin-top: 10px;
   font-size: 30px;
   color: #FFFFFF;
 }
@@ -110,19 +128,23 @@ body {
   background-color: #8e4c00;
 }
 
-.footer-socios {
-  margin-top: 75px;
-}
-
 .form {
   margin-left: 15px;
   box-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
 
-.titulo-catalogo {
+.footer-socios {
+  margin-top: 173px;
+}
+
+.titulo-catalogo, .subtitulo-catalogo {
   color: #FFFFFF;
   text-align: center;
   text-shadow: 15px 5px 15px rgb(0, 0, 0);
+}
+
+.subtitulo-catalogo {
+  margin-top: 60px;
 }
 
 .container-catalogo {
@@ -145,6 +167,11 @@ body {
   margin-bottom: 85px;
   box-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
+.container-catalogo .parrafo-video-catalogo {
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 15px 5px 15px rgb(0, 0, 0);
+}
 
 .img-catalogo {
   width: 300px;
@@ -152,7 +179,7 @@ body {
 }
 
 .footer-catalogo {
-  margin-top: 90px;
+  margin-top: 480px;
 }
 
 #main-productos {
@@ -166,19 +193,13 @@ body {
   text-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
 
-#container-productos {
+#container-productos-1 {
   margin-bottom: 150px;
   box-shadow: 15px 15px 20px rgb(0, 0, 0);
 }
 
 .footer-productos {
-  margin-top: 60px;
-}
-
-.titulo-video-1 {
-  color: #FFFFFF;
-  text-align: center;
-  text-shadow: 5px 5px 20px rgb(0, 0, 0);
+  margin-top: 370px;
 }
 
 .videos {
@@ -186,6 +207,14 @@ body {
   display: block;
   flex-wrap: wrap;
   margin: 30px;
+}
+.videos .titulo-video-1, .videos .parrafo-video, .videos .subtitulo-video-1 {
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 5px 5px 20px rgb(0, 0, 0);
+}
+.videos .subtitulo-video-1 {
+  margin-bottom: 30px;
 }
 .videos .videos-1 {
   margin-bottom: 20px;
@@ -203,7 +232,7 @@ body {
 }
 
 .footer-video {
-  padding-top: 100px;
+  padding-top: 400px;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -233,11 +262,11 @@ body {
   .img-catalogo, .titulo-video-catalogo, .video-catalogo {
     display: none;
   }
-  .titulo-catalogo {
+  .titulo-catalogo, .subtitulo-catalogo {
     text-shadow: 15px 15px 20px rgb(0, 0, 0);
   }
   .footer-catalogo {
-    margin-top: 235px;
+    margin-top: 345px;
   }
   /* media de socios */
   .subtitulo-socios {
@@ -250,6 +279,18 @@ body {
   .footer-socios {
     margin-bottom: 35px;
   }
+  /* media de productos */
+  table {
+    margin-left: 20px;
+  }
+  .parrafo-productos {
+    text-align: center;
+    font-size: 25px;
+    color: #C0C0C0;
+  }
+  .footer-productos {
+    margin-top: 400px;
+  }
   /* media de videos */
   .titulo-video {
     font-size: 50px;
@@ -261,20 +302,16 @@ body {
     height: 650px;
   }
   .titulo-video-2 {
-    display: none;
+    font-size: 30px;
+    text-shadow: 15px 15px 20px rgb(0, 0, 0);
   }
   .videos-2 {
-    display: none;
+    margin-left: 50px;
+    margin-bottom: 100px;
+    height: 650px;
   }
   .footer-video {
-    margin-top: 8px;
-  }
-  /* media de productos */
-  table {
-    margin-left: 20px;
-  }
-  .footer-productos {
-    margin-top: 130px;
+    margin-top: 80px;
   }
 }
 header {
